@@ -1,0 +1,31 @@
+{
+  "name": "react-native-maple-weibo",
+  "version": "3.0.5",
+  "description": "新浪微博登录、分享模块",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanmaple/react-native-maple-weibo.git"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "weibo",
+    "sina",
+    "share",
+    "login"
+  ],
+  "author": "nanmaple",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nanmaple/react-native-maple-weibo/issues"
+  },
+  "homepage": "https://github.com/nanmaple/react-native-maple-weibo#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0"
+  }
+}
