@@ -6,6 +6,7 @@ import {NativeModules, NativeAppEventEmitter} from 'react-native';
 import Promise from 'bluebird';
 
 const {WeiboAPI} = NativeModules;
+export const isWeiboAppInstalled = WeiboAPI.isWeiboAppInstalled;
 
 // Used only with promisify. Transform callback to promise result.
 function translateError(err, result) {

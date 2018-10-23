@@ -132,6 +132,11 @@ public class WeiboModule extends ReactContextBaseJavaModule implements ActivityE
         return mSinaShareAPI;
     }
 
+    @ReactMethod
+    public void isWeiboAppInstalled(Promise promise) {
+        this.registerShare();
+        promise.resolve(mSinaShareAPI.isWeiboAppInstalled());
+    }
 
     @ReactMethod
     public void login(final ReadableMap config, final Callback callback) {
