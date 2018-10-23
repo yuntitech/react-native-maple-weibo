@@ -69,6 +69,13 @@ RCT_EXPORT_MODULE();
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+RCT_REMAP_METHOD(isWeiboAppInstalled,
+                 isWeiboAppInstalledWithResolver:(RCTPromiseResolveBlock)resolve
+                 rejecter:(RCTPromiseRejectBlock)reject)
+{
+  resolve(@(WeiboSDK.isWeiboAppInstalled));
+}
+
 RCT_EXPORT_METHOD(login:(NSDictionary *)config
                   :(RCTResponseSenderBlock)callback)
 {
