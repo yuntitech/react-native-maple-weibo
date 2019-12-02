@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.source_files   = "ios/**/*.{h,m}"
 
   s.frameworks     = 'ImageIO', 'SystemConfiguration', 'Security', 'CoreTelephony', 'CoreText'
-  s.libraries      = 'libsqlite3', 'libz'
+  s.libraries      = 'sqlite3', 'z'
   s.vendored_library = 'ios/libWeiboSDK/libWeiboSDK.a'
   s.resource       = 'ios/libWeiboSDK/WeiboSDK.bundle'
   
