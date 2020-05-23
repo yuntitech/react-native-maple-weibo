@@ -223,9 +223,9 @@ RCT_EXPORT_METHOD(shareToWeibo:(NSDictionary *)aData
         case WeiboSDKResponseStatusCodeUserCancelInstall:
             errMsg = @"用户取消安装微博客户端";
             break;
-        case WeiboSDKResponseStatusCodePayFail:
-            errMsg = @"支付失败";
-            break;
+//        case WeiboSDKResponseStatusCodePayFail:
+//            errMsg = @"支付失败";
+//            break;
         case WeiboSDKResponseStatusCodeShareInSDKFailed:
             errMsg = @"分享失败";
             break;
@@ -258,14 +258,14 @@ RCT_EXPORT_METHOD(shareToWeibo:(NSDictionary *)aData
     }
     else {
         if ([type isEqualToString:RCTWBShareTypeVideo]) {
-            WBVideoObject *videoObject = [WBVideoObject new];
-            videoObject.videoUrl = aData[RCTWBShareWebpageUrl];
-            message.mediaObject = videoObject;
+//            WBVideoObject *videoObject = [WBVideoObject new];
+//            videoObject.videoUrl = aData[RCTWBShareWebpageUrl];
+//            message.mediaObject = videoObject;
         }
         else if ([type isEqualToString:RCTWBShareTypeAudio]) {
-            WBMusicObject *musicObject = [WBMusicObject new];
-            musicObject.musicUrl = aData[RCTWBShareWebpageUrl];
-            message.mediaObject = musicObject;
+//            WBMusicObject *musicObject = [WBMusicObject new];
+//            musicObject.musicUrl = aData[RCTWBShareWebpageUrl];
+//            message.mediaObject = musicObject;
         }
         else {
             WBWebpageObject *webpageObject = [WBWebpageObject new];
